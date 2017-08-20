@@ -1,9 +1,13 @@
 == Grape API practice repo
 
 Endpoint to create an employee record:
-
 curl http://localhost:3000/api/v1/employee_data.json -d "name='Steve'&address='San Jose'&age=50"
 
 Endpoint to retrieve employee records:
-
 url http://localhost:3000/api/v1/employee_data.json
+
+Endpoint to update an employee record:
+curl -X PUT http://localhost:3000/api/v1/employee_data/1.json -d "address='Alaska'"
+
+Endpoint to delete a specific employee record:
+curl -X DELETE http://localhost:3000/api/v1/employee_data/1.json
