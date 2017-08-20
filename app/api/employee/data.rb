@@ -1,5 +1,5 @@
 module Employee
-  class Data < Grape::EmpApi
+  class Data < Grape::API
 
     resource :employee_data do
       desc "List all Employess"
